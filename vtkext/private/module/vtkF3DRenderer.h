@@ -59,6 +59,7 @@ public:
   void ShowFilename(bool show);
   void ShowCheatSheet(bool show);
   void ShowConsole(bool show);
+  void ShowMinimalConsole(bool show);
   void ShowDropZone(bool show);
   void ShowHDRISkybox(bool show);
   void ShowArmature(bool show);
@@ -201,6 +202,11 @@ public:
    * Set the roughness on all actors
    */
   void SetRoughness(const std::optional<double>& roughness);
+
+  /**
+   * Set the index of refraction of the base layer on all actors
+   */
+  void SetBaseIOR(const std::optional<double>& baseIOR);
 
   /**
    * Set the surface color on all actors
@@ -525,6 +531,7 @@ private:
   bool MetaDataVisible = false;
   bool CheatSheetVisible = false;
   bool ConsoleVisible = false;
+  bool MinimalConsoleVisible = false;
   bool DropZoneVisible = false;
   bool HDRISkyboxVisible = false;
   bool ArmatureVisible = false;
@@ -590,6 +597,7 @@ private:
   std::optional<double> Opacity;
   std::optional<double> Roughness;
   std::optional<double> Metallic;
+  std::optional<double> BaseIOR;
   std::optional<double> NormalScale;
   std::optional<std::vector<double>> SurfaceColor;
   std::optional<std::vector<double>> EmissiveFactor;

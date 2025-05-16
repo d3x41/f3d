@@ -406,6 +406,7 @@ void window_impl::UpdateDynamicOptions()
   renderer->ShowMetaData(opt.ui.metadata);
   renderer->ShowCheatSheet(opt.ui.cheatsheet);
   renderer->ShowConsole(opt.ui.console);
+  renderer->ShowMinimalConsole(opt.ui.minimal_console);
   renderer->ShowDropZone(opt.ui.dropzone);
   renderer->SetDropZoneInfo(opt.ui.dropzone_info);
   renderer->ShowArmature(opt.render.armature.enable);
@@ -480,6 +481,7 @@ void window_impl::UpdateDynamicOptions()
   renderer->SetTextureBaseColor(opt.model.color.texture);
   renderer->SetRoughness(opt.model.material.roughness);
   renderer->SetMetallic(opt.model.material.metallic);
+  renderer->SetBaseIOR(opt.model.material.base_ior);
   renderer->SetTextureMaterial(opt.model.material.texture);
   renderer->SetTextureEmissive(opt.model.emissive.texture);
   renderer->SetEmissiveFactor(opt.model.emissive.factor);
