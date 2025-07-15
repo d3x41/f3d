@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>Class scene &#8212; libf3d 3.1.0 documentation</title>
+    <title>Class scene &#8212; libf3d 3.2.0 documentation</title>
   
   
   
@@ -49,7 +49,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'api/classf3d_1_1scene';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Class utils" href="classf3d_1_1utils.html" />
+    <link rel="next" title="Class transform2d_t" href="classf3d_1_1transform2d__t.html" />
     <link rel="prev" title="Class ratio_t" href="classf3d_1_1ratio__t.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -122,7 +122,7 @@
   
   
   
-    <p class="title logo__title">libf3d 3.1.0 documentation</p>
+    <p class="title logo__title">libf3d 3.2.0 documentation</p>
   
 </a></div>
         <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
@@ -153,6 +153,7 @@
 <li class="toctree-l2"><a class="reference internal" href="structf3d_1_1scene_1_1load__failure__exception.html">Struct scene::load_failure_exception</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structf3d_1_1type__access__exception.html">Struct type_access_exception</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structf3d_1_1type__construction__exception.html">Struct type_construction_exception</a></li>
+<li class="toctree-l2"><a class="reference internal" href="structf3d_1_1utils_1_1glob__exception.html">Struct utils::glob_exception</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structf3d_1_1utils_1_1string__template_1_1lookup__error.html">Struct string_template::lookup_error</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structf3d_1_1utils_1_1tokenize__exception.html">Struct utils::tokenize_exception</a></li>
 <li class="toctree-l2"><a class="reference internal" href="structf3d_1_1vector3__t.html">Struct vector3_t</a></li>
@@ -169,6 +170,7 @@
 <li class="toctree-l2"><a class="reference internal" href="classf3d_1_1log.html">Class log</a></li>
 <li class="toctree-l2"><a class="reference internal" href="classf3d_1_1ratio__t.html">Class ratio_t</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Class scene</a></li>
+<li class="toctree-l2"><a class="reference internal" href="classf3d_1_1transform2d__t.html">Class transform2d_t</a></li>
 <li class="toctree-l2"><a class="reference internal" href="classf3d_1_1utils.html">Class utils</a></li>
 <li class="toctree-l2"><a class="reference internal" href="classf3d_1_1utils_1_1string__template.html">Class utils::string_template</a></li>
 <li class="toctree-l2"><a class="reference internal" href="classf3d_1_1window.html">Class window</a></li>
@@ -437,6 +439,12 @@ document.write(`
 <dd><p>Get animation time range of currently added files. Returns [0, 0] if there is no animations. </p>
 </dd></dl>
 
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK3f3d5scene19availableAnimationsEv">
+<span id="_CPPv3NK3f3d5scene19availableAnimationsEv"></span><span id="_CPPv2NK3f3d5scene19availableAnimationsEv"></span><span id="f3d::scene::availableAnimationsC"></span><span class="target" id="classf3d_1_1scene_1ac9b41a495f0e8cf680d2511e3959ce6a"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">unsigned</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">availableAnimations</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4NK3f3d5scene19availableAnimationsEv" title="Permalink to this definition">#</a><br /></dt>
+<dd><p>Return the number of animations available in the currently loaded files. </p>
+</dd></dl>
+
 </div>
 <dl class="cpp struct">
 <dt class="sig sig-object cpp" id="_CPPv4N3f3d5scene22load_failure_exceptionE">
@@ -476,11 +484,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="classf3d_1_1utils.html"
+       href="classf3d_1_1transform2d__t.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Class utils</p>
+        <p class="prev-next-title">Class transform2d_t</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

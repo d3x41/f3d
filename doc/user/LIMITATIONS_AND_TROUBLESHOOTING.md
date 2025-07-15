@@ -14,8 +14,6 @@ Here is a non exhaustive list of F3D limitations:
 FBX, DAE, OFF, DXF, X and 3MF file formats rely on [Assimp](https://github.com/assimp/assimp) library. It comes with some known limitations:
 
 - PBR materials are not supported for FBX file format.
-- Complex animations are not working very well with Assimp 5.1, it's recommended to use Assimp 5.0 for this use case.
-- Only one animation can be shown at a time, showing all animations is not supported yet.
 - Some files can be empty, crash, or show artifacts.
 - DXF support is very limited: only files with polylines and 3D faces are displayed.
 - 3MF files may crash at exit (issue in Assimp: https://github.com/assimp/assimp/issues/5328)
@@ -29,7 +27,6 @@ ABC file formats rely on [Alembic](https://github.com/alembic/alembic) library. 
 - Does not support ArbGeomParam feature in Alembic.
 - Does not support Subdivision Meshes.
 - Does not support Materials.
-- Does not support Animations.
 
 ## USD
 
@@ -61,6 +58,11 @@ Make sure that VTK has been built with _OpenImageDenoise_ support (`VTKOSPRAY_EN
 > My model shows up all wrong, with inverted surfaces everywhere.
 
 Your data probably contains some translucent data for some reason, turn on translucency support by pressing `P` or using the `-p` command line option.
+
+> My 3D Gaussian Splatting data in .ply format isn't opened properly.
+
+.ply is a generic file format, we cannot assumes it's a 3DGS, thus we do not give good presets for this specific use case.
+It's recommended to use these options: `--point-sprites-size=1 --point-sprites-type=gaussian -soyk`, but you can also add them in your [config file](CONFIGURATION_FILE.md).
 
 ## Linux
 
